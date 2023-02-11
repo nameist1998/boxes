@@ -1,0 +1,114 @@
+body{
+    background: #15202B;
+}
+.containerOfBoxes{
+    max-width: 325px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 150px auto;
+    background: none;
+    position: relative;
+    background: #15202B;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+#box-1{
+    background-color: red;
+}
+#box-2{
+    background-color: green;
+}
+#box-3{
+    background-color: blue;
+}
+#box-4{
+    background-color: cyan;
+}
+#box-5{
+    background-color: black;
+}
+#box-6{
+    background-color:magenta;
+}
+#box-7{
+    background-color: yellow;
+}
+#box-8{
+    background-color:bisque;
+}
+#box-9{
+    background-color:chartreuse;
+}
+
+.blur{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.displayNone{
+    display: none;
+}
+
+form{
+    color: white;
+    font-size: 12px;
+    width: 10px;
+}
+form input{
+    width: 35px;
+}
+#changeSix{
+    position: relative;
+    left: 70%;
+}
+
+.biggerBox{
+    width: 200px;
+    height: 200px;
+}
+.containerOfBoxesIfBigger{
+    max-width: 650px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    background: #15202B;
+    position: relative;
+}
+
+.shadow::before,
+.shadow::after{
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: linear-gradient(45deg,red,blue,green,yellow,#e11d74,black,#ffff00,#aa0000);
+  background-size: 400%;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  z-index: -1;
+  animation: animate 75s linear infinite;
+}
+.shadow::before{
+    filter: blur(10px);
+}
+@keyframes animate{
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
