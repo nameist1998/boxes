@@ -32,8 +32,10 @@ function renderThirdBox(){
 
 document.getElementById('box-4').onclick = function(){
     document.getElementById('box-4').classList.add('displayNone');
+    document.getElementById('changeSix').classList.add('displayNone');
     setTimeout(() => {
         document.getElementById('box-4').classList.remove('displayNone');
+        document.getElementById('changeSix').classList.remove('displayNone');
     }, 1000)
 }
 
